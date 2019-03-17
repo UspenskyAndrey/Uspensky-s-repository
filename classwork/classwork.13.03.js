@@ -29,7 +29,7 @@ for (var newMember in arrOfUser)
       if (arrOfUser[newMember].name == 'Mary')
      {
          checkMember = newMember
-         console.log(arrOfUser[newMember])
+         console.log(arrOfUser[checkMember])
      }
 }
 //удаляем свойство age
