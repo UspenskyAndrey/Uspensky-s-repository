@@ -14,8 +14,8 @@ var funcsimple= function(a)
     }
  if (check == 0)
  {
-     return 'value is simple'
+     return 'value '+a+' is simple'
  }
  else
-  return 'value is not simple'
+  return 'value '+a+' is not simple'
 }
