@@ -1,10 +1,15 @@
-var x = function(a){
- if (typeof(a) == 'number')
-  console.log(typeof(a))
- else {
- if (typeof(a)=='string')
-  console.log(typeof(a))
-  else 
-  console.log('udefined')
- } 
+var functype = function(a)
+{
+    if (typeof(a)== 'string')
+    {
+        return typeof(a)
+    }
+    if (isNaN(a) == true) 
+    {
+        return undefined
+    }
+    if (typeof(a) == 'number')
+    {
+        return typeof(a)
+    }
 }
