@@ -1,15 +1,16 @@
 var functype = function(a)
 {
-    if (typeof(a)== 'string')
+    getType = typeof(a)
+    if (getType== 'string')
     {
-        return typeof(a)
+        return getType
     }
     if (isNaN(a) == true) 
     {
         return undefined
     }
-    if (typeof(a) == 'number')
+    if (getType == 'number')
     {
-        return typeof(a)
+        return getType
     }
 }
