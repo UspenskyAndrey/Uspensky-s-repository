@@ -14,7 +14,7 @@ for (var member in arrOfUser)
       if (arrOfUser[member].age ==23)
      {
          checkMember = member
-         console.log(arrOfUser[member])
+         console.log(arrOfUser[checkMember])
      }
 }
 // меняем ему имя
