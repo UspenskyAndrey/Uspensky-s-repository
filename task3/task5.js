@@ -1,5 +1,9 @@
+var copy = {}
 var funccopy = function(a)
 {
-    cloneObject = a
-    return cloneObject
+  for (var key in a)
+  {
+    copy[key] = a[key]
+  }
+  return copy
 }
