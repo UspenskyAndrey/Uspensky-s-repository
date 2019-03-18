@@ -1,18 +1,20 @@
 var clone = {}
 var funcclone = function(a)
-{
+{ 
  for (var key in a)
  {
-  if (typeof(key) == 'string')
+  var getType = typeof(key)
+  if (getType == 'string')
   {
       clone[key] = a[key]
   }
-  if (typeof(key) == 'number')
+  if (getType == 'number')
   {
      clone[key] = a[key]
   }
-   if (typeof(key) == 'object')
+   if (getType == 'object')
    {
+       clone[key] = a[key] 
        funcclone(a[key])
    }
 
