@@ -1,8 +1,6 @@
 var func = function(aString,bObject)
 {
-    if (aString in bObject)
-    {}
-    else
+    if (!(aString in bObject))
     {
         bObject[aString] = 'new'
         return bObject
