@@ -1,9 +1,10 @@
-var clone = {}
+
 var funcclone = function(a)
-{ 
- for (var key in a)
+{
+ var clone = {} 
+ for ( var key in a)
  {
-  var getType = typeof(key)
+  var getType = typeof(a[key])
   if (getType == 'string')
   {
       clone[key] = a[key]
@@ -12,12 +13,17 @@ var funcclone = function(a)
   {
      clone[key] = a[key]
   }
-   if (getType == 'object')
-   {
-       clone[key] = a[key] 
-       funcclone(a[key])
-   }
-
+  if (getType == 'object')
+  { 
+    if (Array.isArray(a[key]))
+    {
+     clone[key] = Object.values(funcclone(a[key]))
+    } 
+    else
+    { 
+    clone[key] = funcclone(a[key])
+    }
+  }
  }
  return clone
 }
