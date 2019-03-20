@@ -2,15 +2,18 @@ var funcequal = function(a)
 {
     var check = a[0]
     var result
-    for (i=1;i<a.length;++i)
-    {
-      if (a[i] == check)
+ for ( var j = 1; j<a.length; ++j) // цикл для позицианирования 
+ {
+   for (var i = j ; i<a.length; ++i) // цикл для проверки
+   {
+     if (check == a[i])
      {
-       result = true
-       return result
+       return true
      }
-     check = a[i]
+   }
+   check = a[j]
+ }
 
-    }
+
     return false
 }
