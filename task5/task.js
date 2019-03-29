@@ -1,18 +1,19 @@
-var Calculator = {
-  result: 0,
+var Calculator = (function() { 
+var result = 0;
+return {
   getResult: function() {
-    return this.result;
+    return result;
   },
   reset: function() {
-    return this.result  = 0;
+    return result  = 0;
   },
   add: function(val) {
     if (!isNaN(val)) {
-     this.result += val;
+    result += val;
      }
      function f(val1) {
        if (!isNaN(val1)) {
-       Calculator.result += val1;
+       result += val1;
        }
        return f;
      }
@@ -21,11 +22,11 @@ var Calculator = {
   },
   substract: function(val) {
     if (!isNaN(val)) {
-     this.result -= val;
+     result -= val;
      }
      function f(val1) {
        if (!isNaN(val1)) {
-       Calculator.result -= val1;
+       result -= val1;
        }
        return f;
      }
@@ -34,11 +35,11 @@ var Calculator = {
   },
   divide: function(val) { 
     if ((!isNaN(val)) && (val !==0)) {
-     this.result /= val;
+     result /= val;
      }
      function f(val1) {
        if ((!isNaN(val1)) && (val1 !== 0)) {
-       Calculator.result /= val1;
+       result /= val1;
        }
        return f;
      }
@@ -49,11 +50,11 @@ var Calculator = {
   },
   multiply: function(val) {
     if (!isNaN(val)) {
-     this.result *= val;
+     result *= val;
      }
      function f(val1) {
        if (!isNaN(val1)) {
-       Calculator.result *= val1;
+       result *= val1;
        }
        return f;
      }
@@ -61,4 +62,4 @@ var Calculator = {
      return f;
   },
 
-}
+}})()
