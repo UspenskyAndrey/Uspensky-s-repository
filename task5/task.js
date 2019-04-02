@@ -7,59 +7,37 @@ return {
   reset: function() {
     return result  = 0;
   },
-  add: function(val) {
+  add: function add(val) {
     if (!isNaN(val)) {
-    result += val;
-     }
-     function f(val1) {
-       if (!isNaN(val1)) {
-       result += val1;
-       }
-       return f;
-     }
-     f.toString = function() {return 'done' };
-     return f;
+      result += val;
+      return add;
+    } else {
+      return add;
+    }
   },
-  substract: function(val) {
+  substract: function sub(val) {
     if (!isNaN(val)) {
-     result -= val;
-     }
-     function f(val1) {
-       if (!isNaN(val1)) {
-       result -= val1;
-       }
-       return f;
-     }
-     f.toString = function() {return 'done' };
-     return f;
+      result -= val;
+      return sub;
+    } else {
+      return sub;
+    }
   },
-  divide: function(val) { 
+  divide: function div(val) { 
     if ((!isNaN(val)) && (val !==0)) {
      result /= val;
+     return div;
+     } else {
+       return div;
      }
-     function f(val1) {
-       if ((!isNaN(val1)) && (val1 !== 0)) {
-       result /= val1;
-       }
-       return f;
-     }
-     f.toString = function() {
-       return 'done';
-       };
-     return f;
   },
-  multiply: function(val) {
+  multiply: function mul(val) {
     if (!isNaN(val)) {
      result *= val;
+     return mul;
+     } else {
+       return mul;
      }
-     function f(val1) {
-       if (!isNaN(val1)) {
-       result *= val1;
-       }
-       return f;
-     }
-     f.toString = function() {return 'done' };
-     return f;
   },
 
 }})()
