@@ -12,8 +12,8 @@ var anotherSlice = function(array, begin, end) {
   if (end < 0) {
     end = array.length + end;
   }
-  for (var i = begin, j = 0; i < end; ++i, ++j) {
-    newArr[j] = array[i];
+  for (var i = begin; i < end; ++i) {
+    newArr.push(array[i]);
   }
   return newArr;
 }
