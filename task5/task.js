@@ -20,7 +20,7 @@ return {
     return sub;
   },
   divide: function div(val) { 
-    if ((!isNaN(val)) && (val !==0)) {
+    if ((!isNaN(val)) && (val !== 0)) {
      result /= val;
      }
      return div;
