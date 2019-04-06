@@ -1,0 +1,21 @@
+.first {
+ border: 3px solid #bac;
+}
+.second {
+ outline: 4px solid #10cada;
+}
+.third {
+ border: 2px dashed #000;
+ border-radius: 10px; 
+}
+.fourth {
+ border: 3px solid #aaa;
+ border-radius: 20px;
+ border-top-right-radius: 200px 150px;
+ border-bottom-left-radius: 100px 100px;
+}
+.fifth {
+ box-shadow: 0 0 0 3px red,
+             0 0 0 6px blue;
+             3px 0 0 6px orange;
+}
