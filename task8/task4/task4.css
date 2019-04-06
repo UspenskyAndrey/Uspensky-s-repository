@@ -1,0 +1,23 @@
+.first {
+ background-color: aqua;
+}
+.second {
+ background-image: url(http://blog.marvelapp.com/wp-content/uploads/2014/01/bg.png); 
+ height: 100px;
+ width: 400px;
+ margin: 20px;
+ padding: 10px;
+ text-align: center;   
+}
+.third {
+ font-family: Georgia;
+ font-style: italic; 
+ font-variant: small-caps;
+ font-size: large;
+}
+.fourth {
+
+}
+.fifth {
+
+}
