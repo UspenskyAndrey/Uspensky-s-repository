@@ -5,14 +5,30 @@
  outline: 4px solid #10cada;
 }
 .third {
- border: 2px dashed #000;
- border-radius: 10px; 
+ background-color: red;
+ padding: 20px;
+ margin: 20px;
+ position: relative;
+ z-index: 10;
+}
+.third:after {
+ background-color: white;
+ content: '';
+ top: 10px;
+ left: 10px;
+ right: 10px;
+ bottom: 10px;
+ position: absolute;
+ z-index: -1;
 }
 .fourth {
- border: 3px solid #aaa;
- border-radius: 20px;
- border-top-right-radius: 200px 150px;
- border-bottom-left-radius: 100px 100px;
+ padding: 90px;
+ margin: 100px 90px 100px 100px;
+ background-size: 550px 200px;
+ background-image: url(https://cdn.pixabay.com/photo/2014/08/25/16/17/picture-frame-427233_960_720.jpg);
+ background-repeat: no-repeat;
+ background-position: center;
+ text-align: center;
 }
 .fifth {
  box-shadow: 0 0 0 3px red,
