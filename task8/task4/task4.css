@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Dokdo');
 .first {
  background-color: aqua;
+ font-size: 5em;
 }
 .second {
  background-image: url(http://blog.marvelapp.com/wp-content/uploads/2014/01/bg.png); 
@@ -7,6 +9,7 @@
  width: 400px;
  margin: 20px;
  padding: 10px;
+ font-size: 300%;
  text-align: center;   
 }
 .third {
