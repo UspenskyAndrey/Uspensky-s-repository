@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>my practice</title>
+    <style>
+        table{
+  color: #8587a1;
+}
+table thead{
+  text-transform: uppercase;
+}
+table thead tr{
+  background: #e3eaf3;
+}
+table tbody tr:nth-child(2n){
+  background: #e3eaf3;
+  transition: background 0,5s;
+}
+table tbody tr:nth-child(2n+1){
+  background: #f2f6fa;
+  transition: background 0,5s;
+}
+#my-tbody > tr:hover{
+  background: #e2e5e9;
+}
+.table-header{
+  padding: 4px 20px;
+}
+table tbody tr td{
+  padding: 15px 20px;
+}
+.name{
+  text-transform: capitalize;
+}
+    </style>
+</head>	
+<body>
+<table>
+  <thead>
+    <tr>
+      <th class="table-header">customer</th>
+      <th class="table-header">phone</th>
+      <th class="table-header">mail</th>
+      <th class="table-header">outstanding</th>
+    </tr>
+  </thead>
+  <tbody id="my-tbody">
+    <tr>
+      <td class="name">jhonny aviony</td>
+      <td>(740) 841-7566</td>
+      <td>info@jhhonnyaviony.com</td>
+      <td>$ 2.400.00</td>
+    </tr>
+    <tr>
+      <td class="name">mark hammock</td>
+      <td>(800) 950-4511</td>
+      <td>markkhammocklgmail.com</td>
+      <td>$ 700</td>
+    </tr>
+    <tr>
+      <td class="name">richicl cross</td>
+      <td>(322) 841-7566</td>
+      <td>crossstation@gmail.com</td>
+      <td>$ 26.850.00</td>
+    </tr>
+    <tr>
+      <td class="name">flinn's shack</td>
+      <td>(700) 841-7566</td>
+      <td>help@flinns.com</td>
+      <td>$ 26.850.00</td>
+    </tr>
+    <tr>
+      <td class="name">filip justic</td>
+      <td>(322) 841-7566</td>
+      <td>flip.justic@gmail.com</td>
+      <td>$ 642.214.00</td>
+    </tr>
+    <tr>
+      <td class="name">summer evans</td>
+      <td>(800) 950-4511</td>
+      <td>summer@gmail.com</td>
+      <td>$ 700</td>
+    </tr>
+    <tr>
+      <td class="name">marco s.diaz</td>
+      <td>(800)800-1111</td>
+      <td>s.diaz@gmail.com</td>
+      <td>$ 700</td>
+    </tr>
+    <tr>
+      <td class="name">ricky stwerat</td>
+      <td>(800) 800-2222</td>
+      <td>r.stwerat@gmail.com</td>
+      <td>$ 930.00</td>
+    </tr>
+  </tbody>
+</table>
+   
+</body>
+</html>
